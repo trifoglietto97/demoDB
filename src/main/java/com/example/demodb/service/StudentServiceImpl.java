@@ -16,8 +16,15 @@ public class StudentServiceImpl implements StudenteService {
     public List<Studente> saveStudente(List<Studente> listStudenti){
         List<Studente> risposta = (List<Studente>)studenteRepository.saveAll(listStudenti);
         return risposta;
-
     }
+
+    @Override
+    public List<Studente> getAllStudente() {
+        List<Studente> sRisposta = (List<Studente>) studenteRepository.findAll();
+        return sRisposta;
+    }
+
+
 
 
 }

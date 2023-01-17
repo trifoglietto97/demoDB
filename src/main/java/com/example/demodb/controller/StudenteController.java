@@ -20,4 +20,11 @@ public class StudenteController {
         return rispostaStudente;
     }
 
+    @RequestMapping(value = "/getAllStudente",method = RequestMethod.GET)
+    @ResponseBody
+    public List<Studente> getAllStudent(){
+        List<Studente> rispostaStudente = (List<Studente>) studentServiceIml.getAllStudente();
+        return rispostaStudente;
+    }
+
 }
