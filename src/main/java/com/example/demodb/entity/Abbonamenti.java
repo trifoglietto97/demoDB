@@ -8,9 +8,6 @@ public class Abbonamenti {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long abbonamentiId;
 
-    @Column(name = "_abbonamento")
-    private String abbonamento;
-
     public Long getAbbonamentiId() {
         return abbonamentiId;
     }
@@ -19,19 +16,6 @@ public class Abbonamenti {
         this.abbonamentiId = abbonamentiId;
     }
 
-    public String getAbbonamento() {
-        return abbonamento;
-    }
 
-    public void setAbbonamento(String abbonamento) {
-        this.abbonamento = abbonamento;
-    }
 
-    @Override
-    public String toString() {
-        return "Abbonamenti{" +
-                "abbonamentiId=" + abbonamentiId +
-                ", abbonamento='" + abbonamento + '\'' +
-                '}';
-    }
 }
