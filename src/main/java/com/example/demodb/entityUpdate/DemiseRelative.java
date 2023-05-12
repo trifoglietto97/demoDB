@@ -32,11 +32,10 @@ public class DemiseRelative {
 
     @ManyToOne
     @Cascade(CascadeType.ALL)
-    @JoinColumn(name = "demise_id", referencedColumnName = "idDemise ")
-    private DemiseEntity demises;
+    @JoinColumn(name = "_demise", referencedColumnName = "idDemise", nullable = false)
+    private DemiseEntity demise;
 
-    private UUID DEMISEID;
-    private UUID ACCOUNTID;
+    //private UUID ACCOUNTID;
     private Kinship KINSHIP;
     private String PHONE; //? verificare utilizzo di demiserelative.phone in altre classi
     private String PHONEHASH;
