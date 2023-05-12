@@ -32,7 +32,7 @@ public class DemiseRelative {
 
     @ManyToOne
     @Cascade(CascadeType.ALL)
-    @JoinColumn(name = "demise_id", referencedColumnName = "idDemise")
+    @JoinColumn(name = "demise_id", referencedColumnName = "idDemise ")
     private DemiseEntity demises;
 
     private UUID DEMISEID;
