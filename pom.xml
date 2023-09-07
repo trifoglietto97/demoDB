@@ -11,6 +11,16 @@
     <groupId>com.example</groupId>
     <artifactId>demoDb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub trifoglietto97 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/trifoglietto97/demoDB</url>
+        </repository>
+    </distributionManagement>
+
     <name>demoDb</name>
     <description>demoDb</description>
     <properties>
